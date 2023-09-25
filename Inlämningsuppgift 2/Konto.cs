@@ -24,10 +24,10 @@ namespace Inlämningsuppgift_2
 
         public void SkrivUt()
         {
-            Console.WriteLine(nummer);
-            Console.WriteLine(innehavare);
-            Console.WriteLine(saldo);
-            Console.WriteLine(rantesats);
+            Console.WriteLine("Kontonummer: " + nummer);
+            Console.WriteLine("Kontoinnehavare: " + innehavare);
+            Console.WriteLine("Saldo: " + saldo + " kr");
+            Console.WriteLine("Räntesats: " + rantesats*100 + "%");
             // skriver ut samtliga attribut
         }
 
