@@ -27,7 +27,7 @@ namespace Inlämningsuppgift_2
             Console.WriteLine("Kontonummer: " + nummer);
             Console.WriteLine("Kontoinnehavare: " + innehavare);
             Console.WriteLine("Saldo: " + saldo + " kr");
-            Console.WriteLine("Räntesats: " + rantesats*100 + "%");
+            Console.WriteLine("Räntesats: " + rantesats + "%");
             // skriver ut samtliga attribut
         }
 
@@ -39,7 +39,7 @@ namespace Inlämningsuppgift_2
 
         public void RanteUtbetalning()
         {
-            saldo *= (1 + rantesats);
+            saldo *= (1 + (rantesats/100));
             // beräknar räntan och adderar den till saldot
         }
 
